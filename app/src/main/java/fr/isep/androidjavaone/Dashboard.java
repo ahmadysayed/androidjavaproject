@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -17,6 +19,9 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +35,7 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
         //Navigation drawer menu
         navigationView.bringToFront();
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -39,8 +44,30 @@ public class Dashboard extends AppCompatActivity implements NavigationView.OnNav
 
     }
 
+
+
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return true;
+
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.nav_home) {
+            // Handle the "Home" menu item.
+            Intent intent = new Intent(this, Dashboard.class);
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.search_room) {
+            // Handle the "Search Room" menu item.
+            Intent intent = new Intent(this, SearchPage.class);
+            startActivity(intent);
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
     }
+
+
+
+
 }
