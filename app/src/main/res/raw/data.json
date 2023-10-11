@@ -1,0 +1,294 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Hotel ABC",
+      "location": "123 Main St, City, Country",
+      "rating": 4.5,
+      "amenities": ["Free Wi-Fi", "Parking", "Restaurant", "Gym"],
+      "rooms": [
+        {
+          "id": 101,
+          "type": "Single",
+          "price": 100,
+          "availability": {
+            "2023-10-09": 5,
+            "2023-10-10": 3
+          },
+          "image": "https://example.com/room101.jpg"
+        },
+        {
+          "id": 102,
+          "type": "Double",
+          "price": 150,
+          "availability": {
+            "2023-10-09": 8,
+            "2023-10-10": 7
+          },
+          "image": "https://example.com/room102.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hotel XYZ",
+      "location": "456 Elm St, City, Country",
+      "rating": 3.8,
+      "amenities": ["Free Wi-Fi", "Pool", "Spa"],
+      "rooms": [
+        {
+          "id": 201,
+          "type": "Single",
+          "price": 120,
+          "availability": {
+            "2023-10-09": 2,
+            "2023-10-10": 4
+          },
+          "image": "https://example.com/room201.jpg"
+        },
+        {
+          "id": 202,
+          "type": "Double",
+          "price": 180,
+          "availability": {
+            "2023-10-09": 9,
+            "2023-10-10": 5
+          },
+          "image": "https://example.com/room202.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sunset Beach Resort",
+      "location": "789 Ocean Ave, Coastal City, Country",
+      "rating": 4.2,
+      "amenities": ["Beach Access", "Pool", "Restaurant"],
+      "rooms": [
+        {
+          "id": 301,
+          "type": "Single",
+          "price": 110,
+          "availability": {
+            "2023-10-09": 7,
+            "2023-10-10": 6
+          },
+          "image": "https://example.com/room301.jpg"
+        },
+        {
+          "id": 302,
+          "type": "Double",
+          "price": 160,
+          "availability": {
+            "2023-10-09": 4,
+            "2023-10-10": 3
+          },
+          "image": "https://example.com/room302.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "City Center Inn",
+      "location": "789 Downtown Ave, Urban City, Country",
+      "rating": 3.7,
+      "amenities": ["Free Wi-Fi", "Parking"],
+      "rooms": [
+        {
+          "id": 401,
+          "type": "Single",
+          "price": 90,
+          "availability": {
+            "2023-10-09": 10,
+            "2023-10-10": 9
+          },
+          "image": "https://example.com/room401.jpg"
+        },
+        {
+          "id": 402,
+          "type": "Double",
+          "price": 130,
+          "availability": {
+            "2023-10-09": 6,
+            "2023-10-10": 5
+          },
+          "image": "https://example.com/room402.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mountain Retreat Lodge",
+      "location": "123 Mountain Rd, Scenic Town, Country",
+      "rating": 4.0,
+      "amenities": ["Free Wi-Fi", "Mountain View", "Hiking Trails"],
+      "rooms": [
+        {
+          "id": 501,
+          "type": "Single",
+          "price": 120,
+          "availability": {
+            "2023-10-09": 3,
+            "2023-10-10": 2
+          },
+          "image": "https://example.com/room501.jpg"
+        },
+        {
+          "id": 502,
+          "type": "Double",
+          "price": 180,
+          "availability": {
+            "2023-10-09": 8,
+            "2023-10-10": 7
+          },
+          "image": "https://example.com/room502.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cozy Cottage Inn",
+      "location": "321 Forest Lane, Countryside, Country",
+      "rating": 4.4,
+      "amenities": ["Free Wi-Fi", "Nature Walks"],
+      "rooms": [
+        {
+          "id": 601,
+          "type": "Single",
+          "price": 95,
+          "availability": {
+            "2023-10-09": 7,
+            "2023-10-10": 4
+          },
+          "image": "https://example.com/room601.jpg"
+        },
+        {
+          "id": 602,
+          "type": "Double",
+          "price": 140,
+          "availability": {
+            "2023-10-09": 9,
+            "2023-10-10": 6
+          },
+          "image": "https://example.com/room602.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Metropolitan Hotel",
+      "location": "789 Downtown Ave, Metropolitan City, Country",
+      "rating": 4.7,
+      "amenities": ["Free Wi-Fi", "Parking", "Gym"],
+      "rooms": [
+        {
+          "id": 701,
+          "type": "Single",
+          "price": 115,
+          "availability": {
+            "2023-10-09": 5,
+            "2023-10-10": 3
+          },
+          "image": "https://example.com/room701.jpg"
+        },
+        {
+          "id": 702,
+          "type": "Double",
+          "price": 165,
+          "availability": {
+            "2023-10-09": 8,
+            "2023-10-10": 7
+          },
+          "image": "https://example.com/room702.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Riverside Lodge",
+      "location": "456 Riverfront Rd, Riverside Town, Country",
+      "rating": 4.6,
+      "amenities": ["Free Wi-Fi", "Riverside View", "Fishing"],
+      "rooms": [
+        {
+          "id": 801,
+          "type": "Single",
+          "price": 110,
+          "availability": {
+            "2023-10-09": 6,
+            "2023-10-10": 5
+          },
+          "image": "https://example.com/room801.jpg"
+        },
+        {
+          "id": 802,
+          "type": "Double",
+          "price": 160,
+          "availability": {
+            "2023-10-09": 9,
+            "2023-10-10": 7
+          },
+          "image": "https://example.com/room802.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Luxury Suites",
+      "location": "789 Elegant Ave, Upscale City, Country",
+      "rating": 4.8,
+      "amenities": ["Free Wi-Fi", "Spa", "Fine Dining"],
+      "rooms": [
+        {
+          "id": 901,
+          "type": "Single",
+          "price": 140,
+          "availability": {
+            "2023-10-09": 4,
+            "2023-10-10": 2
+          },
+          "image": "https://example.com/room901.jpg"
+        },
+        {
+          "id": 902,
+          "type": "Double",
+          "price": 200,
+          "availability": {
+            "2023-10-09": 7,
+            "2023-10-10": 6
+          },
+          "image": "https://example.com/room902.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Historic Inn",
+      "location": "123 Heritage Ln, Historic Town, Country",
+      "rating": 4.4,
+      "amenities": ["Free Wi-Fi", "Antique Furnishings"],
+      "rooms": [
+        {
+          "id": 1001,
+          "type": "Single",
+          "price": 100,
+          "availability": {
+            "2023-10-09": 5,
+            "2023-10-10": 3
+          },
+          "image": "https://example.com/room1001.jpg"
+        },
+        {
+          "id": 1002,
+          "type": "Double",
+          "price": 150,
+          "availability": {
+            "2023-10-09": 8,
+            "2023-10-10": 7
+          },
+          "image": "https://example.com/room1002.jpg"
+        }
+      ]
+    }
+  ]
+}

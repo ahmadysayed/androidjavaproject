@@ -1,4 +1,3 @@
-export default [
   {
     id: 1,
     photo_one: require("../images/houses/1.1.jpeg"),
@@ -19,7 +18,6 @@ export default [
     ad_title: "Synergized client-server neural-net",
     description:
       "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    user_id: 6,
   },
   {
     id: 2,
@@ -41,7 +39,6 @@ export default [
     ad_title: "Versatile methodical internet solution",
     description:
       "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    user_id: 2,
   },
   {
     id: 3,
@@ -1096,5 +1093,4 @@ export default [
     description:
       "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
     user_id: 4,
-  },
-];
+  }

@@ -1,21 +1,17 @@
 package fr.isep.androidjavaone;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
-import android.widget.Toolbar;
+import android.widget.TextView;
 
-import com.google.android.material.navigation.NavigationView;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +27,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        TextView txtName = findViewById(R.id.txt_ad_title);
+
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                House house = JsonReader.convertJsonToObject(MainActivity.this);
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        txtName.setText(house.getAd_title());
+                    }
+                });
+            }
+        });
+
+
+
 
         //Animation
         topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
